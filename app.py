@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import joblib
+import os
 
 # --- 1. KONFIGURASI HALAMAN ---
 st.set_page_config(
@@ -30,7 +31,17 @@ st.markdown("""
     """, unsafe_allow_html=True)
 
 # --- 3. LOAD MODEL ---
-model = joblib.load('rdf_model.pkl')
+@st.cache_resource
+def load_model():
+    # Gunakan path yang aman
+    base_path = os.path.dirname(__file__)
+    model_path = os.path.join(base_path, 'model', 'rdf_model.pkl')
+    
+    # Memuat model asli
+    loaded_model = joblib.load(model_path)
+    return loaded_model
+
+model = load_model()
 # Use feature from model
 features = model.feature_names_in_
 
