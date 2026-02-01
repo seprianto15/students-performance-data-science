@@ -41,7 +41,7 @@ with col4:
 if st.button("Check Student Status"):
     
     # Check for empty inputs
-    if None in inputs_values():
+    if None in inputs.values():
         st.error("Please fill in all the required fields!")
     else:
         # Create DataFrame with column order matching the model's features
@@ -55,26 +55,24 @@ if st.button("Check Student Status"):
         # Get probabilities for all classes
         prob = model.predict_proba(input_df)[0]
         
-        # Get the list of class names to find the correct probability index
-        classes = model.classes_.tolist()
+        # Create status label
+        status_labels = {0: "Dropout", 1: "Enrolled", 2: "Graduate"}
+        res_text = status_labels.get(res, "Unknown")
+        
+        # Menghitung probability rate status
+        probability = prob[res]
         
         st.divider()
         
         # Matching the string result
-        if res == "Dropout":
-            st.error(f"### ⚠️ RESULT: {res.upper()}")
-            # Find the index of 'Dropout' in the model classes to show the right probability
-            idx = classes.index("Dropout")
-            st.write(f"Probability: **{prob[idx]:.2%}**")
-        elif res == "Enrolled":
-            st.info(f"### 📘 RESULT: {res.upper()}")
-            # Find the index of 'Enrolled' in the model classes to show the right probability
-            idx = classes.index("Enrolled")
-            st.write(f"Probability: **{prob[idx]:.2%}**")
+        if res == 0:
+            st.error(f"### ⚠️ STATUS : {res_text.upper()}")
+        elif res == 1:
+            st.info(f"### 📖 STATUS : {res_text.upper()}")
         else:
-            st.success(f"### 🎓 RESULT: {res.upper()}")
-            idx = classes.index("Graduate")
-            st.write(f"Probability: **{prob[idx]:.2%}**")
+            st.success(f"### 🎓 STATUS : {res_text.upper()}")
         
+        st.write(f"Probabilitas : **{probability:.2%}**")
+    
     except Exception as e:
         st.error(f"An error occurred during prediction: {e}")
