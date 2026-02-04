@@ -57,3 +57,4 @@ Berikut adalah langkah-langkah untuk menjalankan prototype berbasis machine lear
 streamlit run app.py
 ```
 Berikut adalah tautan untuk mengakses prototype berbasis machine learning secara public :
+[Click here to view application](https://app-students-performance.streamlit.app)
