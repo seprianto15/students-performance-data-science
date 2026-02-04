@@ -52,8 +52,8 @@ Student Performance Dashboard dapat diakses pada tautan ini : [Click here to vie
 
 ## Menjalankan Sistem Machine Learning
 Prototype ini dirancang untuk mengotomatisasi prediksi dropout berbasis machine learning, guna menghasilkan wawasan preventif yang lebih akurat dibandingkan sekadar analisis data statis.  
-Berikut adalah langkah-langkah untuk menjalankan prototype berbasis machine learning secara lokal:
+Berikut adalah langkah-langkah untuk menjalankan prototype berbasis machine learning secara lokal :
 ```bash 
 streamlit run app.py
 ```
-Berikut adalah tautan untuk mengakses prototype berbasis machine learning secara publik:
+Berikut adalah tautan untuk mengakses prototype berbasis machine learning secara public :
