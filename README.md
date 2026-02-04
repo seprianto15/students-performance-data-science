@@ -39,6 +39,6 @@ Adapun bentuk visualisasi yang telah dibuat pada dashboard ini meliputi :
 | 2nd Semester Academic Performance Comparison by Student Status | Visualisasi perbandingan antara rata-rata jumlah mata kuliah yang diuji (*evaluations*), yang lulus (*approved*), dan nilai rata-rata (*grade*) pada semester kedua berdasarkan status akademik siswa (Dropout, Enrolled, dan Graduate). |
 | Tuition Fees up to date by Student Status | Menampilkan status pembayaran uang kuliah mahasiswa (apakah paid atau unpaid) berdasarkan status akademik siswa (Dropout, Enrolled, dan Graduate). |  
 
-Diharapkan dengan adanya visualisasi data ini, institusi dapat mengambil langkah strategis untuk menekan angka dropout dan meningkatkan tingkat kelulusan siswa. Dashboard interaktif dapat diakses pada tautan di bawah ini :  
-[Click here to view dashboard](https://public.tableau.com/views/student_performance_17701627938620/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+Diharapkan dengan adanya visualisasi data ini, institusi dapat mengambil langkah strategis untuk menekan angka dropout dan meningkatkan tingkat kelulusan siswa.  
+Dashboard interaktif dapat diakses pada tautan di bawah ini : [Click here to view dashboard](https://public.tableau.com/views/student_performance_17701627938620/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
