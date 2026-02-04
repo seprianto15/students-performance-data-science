@@ -23,8 +23,22 @@ Berdasarkan cakupan proyek tersebut, dibutuhkan beberapa resource dan tool seper
 | Setup Environment - Anaconda | conda create --name students-performance python=3.13 conda activate students-performance pip install numpy pandas scipy matplotlib seaborn jupyter scikit-learn imbalanced-learn streamlit babel pip freeze > requirements.txt pip install -r requirements.txt |
 
 ## **Business Dashboard**
-| <div align="center">Deskripsi</div> | <div align="center">Command</div> |
-| :--- | :--- |
-| Student Performance Dashboard | [Click here to view dashboard](https://public.tableau.com/views/student_performance_17701627938620/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+Student Performance Dashboard ini dirancang dalam bentuk visualisasi chart/grafik untuk membantu Jaya Jaya Institut dalam mengidentifikasi faktor-faktor yang mempengaruhi atau memicu terjadinya dropout.
 
 ![Dashboard](dashboard.png)
+
+Adapun bentuk visualisasi yang telah dibuat pada dashboard ini meliputi :
+| <div align="center">Indikator</div> | <div align="center">Deskripsi</div> |
+| :--- | :--- |
+| Total Student | Menampilkan jumlah keseluruhan siswa dalam institut. |
+| Dropout | Menampilkan jumlah siswa yang telah dinyatakan putus studi (dropout). |
+| Enrolled | Menampilkan jumlah siswa aktif yang saat ini tengah menempuh pendidikan. |
+| Graduate | Menampilkan jumlah siswa yang telah berhasil menyelesaikan masa studi (lulus). |
+| Average Previous Qualification Grade vs Admission Grade by Student Status | Visualisasi perbandingan antara rata-rata previous qualification grade dengan admission grade berdasarkan status akademik siswa (Dropout, Enrolled, dan Graduate). |
+| 1st Semester Academic Performance Comparison by Student Status | Visualisasi perbandingan antara rata-rata jumlah mata kuliah yang diuji (*evaluations*), yang lulus (*approved*), dan nilai rata-rata (*grade*) pada semester pertama berdasarkan status akademik siswa (Dropout, Enrolled, dan Graduate). |
+| 2nd Semester Academic Performance Comparison by Student Status | Visualisasi perbandingan antara rata-rata jumlah mata kuliah yang diuji (*evaluations*), yang lulus (*approved*), dan nilai rata-rata (*grade*) pada semester kedua berdasarkan status akademik siswa (Dropout, Enrolled, dan Graduate). |
+| Tuition Fees up to date by Student Status | Menampilkan status pembayaran uang kuliah mahasiswa (apakah paid atau unpaid) berdasarkan status akademik siswa (Dropout, Enrolled, dan Graduate). |  
+
+Diharapkan dengan adanya visualisasi data ini, institusi dapat mengambil langkah strategis untuk menekan angka dropout dan meningkatkan tingkat kelulusan siswa. Dashboard interaktif dapat diakses pada tautan di bawah ini :  
+[Click here to view dashboard](https://public.tableau.com/views/student_performance_17701627938620/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+
