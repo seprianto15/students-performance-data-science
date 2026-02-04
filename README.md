@@ -25,9 +25,7 @@ Berdasarkan cakupan proyek tersebut, dibutuhkan beberapa resource dan tool seper
 # Setup Environment - Anaconda 
 conda create --name students-performance python=3.13 
 conda activate students-performance 
-pip install numpy pandas scipy matplotlib seaborn jupyter scikit-learn imbalanced-learn streamlit babel 
-pip freeze > requirements.txt 
-pip install -r requirements.txt
+pip install numpy pandas scipy matplotlib seaborn jupyter scikit-learn imbalanced-learn
 ```
 
 ## **Business Dashboard**
@@ -54,7 +52,10 @@ Student Performance Dashboard dapat diakses pada tautan ini : [Click here to vie
 Prototype ini dirancang untuk mengotomatisasi prediksi dropout berbasis machine learning, guna menghasilkan wawasan preventif yang lebih akurat dibandingkan sekadar analisis data statis.  
 Berikut adalah langkah-langkah untuk menjalankan prototype berbasis machine learning secara lokal :
 ```bash 
+pip install streamlit babel
 streamlit run app.py
+pip freeze > requirements.txt 
+pip install -r requirements.txt
 ```
 Berikut adalah tautan untuk mengakses prototype berbasis machine learning secara public :
 [Click here to view application](https://app-students-performance.streamlit.app)
