@@ -20,7 +20,14 @@ Berdasarkan cakupan proyek tersebut, dibutuhkan beberapa resource dan tool seper
 | <div align="center">Deskripsi</div> | <div align="center">Command</div> |
 | :--- | :--- |
 | Sumber Data | [Click here to Dataset](https://raw.githubusercontent.com/dicodingacademy/dicoding_dataset/refs/heads/main/students_performance/data.csv) | 
-| Setup Environment - Anaconda | conda create --name students-performance python=3.13 conda activate students-performance pip install numpy pandas scipy matplotlib seaborn jupyter scikit-learn imbalanced-learn streamlit babel pip freeze > requirements.txt pip install -r requirements.txt |
+```bash
+# Setup Environment - Anaconda 
+conda create --name students-performance python=3.13 
+conda activate students-performance 
+pip install numpy pandas scipy matplotlib seaborn jupyter scikit-learn imbalanced-learn streamlit babel 
+pip freeze > requirements.txt 
+pip install -r requirements.txt
+```
 
 ## **Business Dashboard**
 Student Performance Dashboard ini dirancang dalam bentuk visualisasi chart/grafik untuk membantu Jaya Jaya Institut dalam mengidentifikasi faktor-faktor yang mempengaruhi atau memicu terjadinya dropout.
@@ -43,6 +50,8 @@ Diharapkan dengan adanya visualisasi data ini, institut dapat mengambil langkah 
 Student Performance Dashboard dapat diakses pada tautan ini : [Click here to view dashboard](https://public.tableau.com/views/student_performance_17701627938620/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 ## Menjalankan Sistem Machine Learning
-| <div align="center">Deskripsi</div> | <div align="center">Command</div> |
-| :--- | :--- |
-| Running sistem machine learning | `streamlit run app.py` |
+Berikut adalah langkah-langkah untuk menjalankan prototype berbasis machine learning secara lokal:
+```bash 
+streamlit run app.py
+```
+Prototype berbasis machine learning ini dirancang untuk mengotomatisasi prediksi dropout berbasis machine learning guna menghasilkan wawasan preventif yang lebih akurat daripada sekadar visualisasi data statis yang telah dibuat sebelumnya.
