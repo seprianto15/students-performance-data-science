@@ -52,10 +52,15 @@ Student Performance Dashboard dapat diakses pada tautan ini : [Click here to vie
 Prototype ini dirancang untuk mengotomatisasi prediksi dropout berbasis machine learning, guna menghasilkan wawasan preventif yang lebih akurat dibandingkan sekadar analisis data statis.  
 Berikut adalah langkah-langkah untuk menjalankan prototype berbasis machine learning secara lokal :
 ```bash 
+# Instal library streamlit dan babel
 pip install streamlit babel
+# Ekspor daftar dependensi ke file requirements.txt
 pip freeze > requirements.txt 
+# Instal semua dependensi dari file requirements
 pip install -r requirements.txt
+# Jalankan aplikasi dashboard secara local
 streamlit run app.py
 ```
 Berikut adalah tautan untuk mengakses prototype berbasis machine learning secara public :
 [Click here to view application](https://app-students-performance.streamlit.app)
+
