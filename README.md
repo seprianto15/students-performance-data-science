@@ -20,7 +20,7 @@ Berdasarkan cakupan proyek tersebut, dibutuhkan beberapa resource dan tool seper
 | <div align="center">Deskripsi</div> | <div align="center">Command</div> |
 | :--- | :--- |
 | Sumber Data | [Click here to Dataset](https://raw.githubusercontent.com/dicodingacademy/dicoding_dataset/refs/heads/main/students_performance/data.csv) | 
-```bash
+``` bash
 # Setup Environment - Anaconda 
 conda create --name students-performance python=3.13 
 conda activate students-performance 
