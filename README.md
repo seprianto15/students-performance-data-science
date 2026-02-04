@@ -14,7 +14,7 @@ Berdasarkan cakupan proyek tersebut, dibutuhkan beberapa resource dan tool seper
 1. Bahasa pemrograman Python sebagai tool utama dalam proyek ini.
 2. Berbagai library pendukung untuk pengolahan data dan pengembangan model machine learning.
 3. Tableau Public sebagai tool yang digunakan untuk membuat business dashboard.
-4. Streamlit sebagai tool yang digunakan untuk membuat sebuah prototype sederhana.
+4. Streamlit sebagai tool yang digunakan untuk membuat sebuah prototype sederhana berbasis machine learning.
 
 ## **Persiapan**
 | <div align="center">Deskripsi</div> | <div align="center">Command</div> |
@@ -27,3 +27,4 @@ Berdasarkan cakupan proyek tersebut, dibutuhkan beberapa resource dan tool seper
 | :--- | :--- |
 | Student Performance Dashboard | [Click here to view dashboard](https://public.tableau.com/views/student_performance_17701627938620/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
+![Dashboard](dashboard.png)
