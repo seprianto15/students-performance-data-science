@@ -64,3 +64,14 @@ streamlit run app.py
 Berikut adalah tautan untuk mengakses prototype berbasis machine learning secara public :
 [Click here to view application](https://app-students-performance.streamlit.app)
 
+## Conclusion
+Proyek ini dirancang untuk membantu Jaya Jaya Institut dalam mengidentifikasi faktor-faktor yang memicu terjadinya dropout. Berdasarkan integrasi business dashboard dan analisis prediktif, ditemukan bahwa :
+1. Dari total 4424 siswa, sebanyak 2209 telah lulus (Graduate), sementara 1421 mengalami dropout, dan 794 sisanya masih dalam masa studi (Enrolled).
+2. Berdasarkan performa akademik pada semester 1 dan 2, siswa yang lulus (Graduate) dan yang masih aktif (Enrolled) secara konsisten menunjukkan tingkat keberhasilan mata kuliah (approved) serta nilai rata-rata (grade) yang jauh lebih tinggi dengan rata-rata nilai 13 dan 12 dibandingkan mahasiswa yang Dropout, yang hanya memiliki rata-rata nilai di kisaran 9-10.
+3. Berdasarkan Previous Qualification Grade dan Admission Grade, tidak terdapat perbedaan signifikan pada nilai kualifikasi sebelumnya (Previous Qualification Grade) maupun nilai seleksi masuk (Admission Grade) di antara ketiga status siswa (Dropout, Enrolled, dan Graduate), yang menunjukkan bahwa faktor eksternal setelah masuk kuliah lebih berpengaruh terhadap risiko dropout.
+4. Berdasarkan data pembayaran SPP terbaru (Tuition Fees up to date), terdapat korelasi yang signifikan antara stabilitas finansial dan keberhasilan studi. Mayoritas siswa yang lulus (Graduate) tercatat telah melunasi kewajiban SPP (Paid) dengan total 2180 siswa. Sebaliknya, pada kategori Dropout, ditemukan tren yang menonjol pada kelompok dengan status SPP menunggak (Unpaid) sebanyak 457 siswa. Hal ini menegaskan bahwa hambatan finansial merupakan faktor kritis yang menghambat keberlanjutan studi.
+5. Dengan adanya sistem berbasis Machine Learning, Jaya Jaya Institut kini memiliki kemampuan untuk mengambil langkah intervensi proaktif bagi siswa yang menunjukkan indikasi risiko dropout, guna meningkatkan angka keberhasilan studi dan efisiensi manajemen pendidikan.
+
+## Rekomendasi Action Items
+1. Memberikan prioritas bantuan beasiswa atau skema opsi cicilan SPP yang lebih ringan bagi siswa dengan status Unpaid.
+2. Mengevaluasi tingkat kesulitan mata kuliah di setiap semester serta menginisiasi program Peer-to-Peer Mentoring sebagai sarana dukungan akademik tambahan bagi siswa.
