@@ -53,9 +53,9 @@ Prototype ini dirancang untuk mengotomatisasi prediksi dropout berbasis machine 
 Berikut adalah langkah-langkah untuk menjalankan prototype berbasis machine learning secara lokal :
 ```bash 
 pip install streamlit babel
-streamlit run app.py
 pip freeze > requirements.txt 
 pip install -r requirements.txt
+streamlit run app.py
 ```
 Berikut adalah tautan untuk mengakses prototype berbasis machine learning secara public :
 [Click here to view application](https://app-students-performance.streamlit.app)
