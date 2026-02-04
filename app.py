@@ -1,3 +1,4 @@
+from logging import config
 import streamlit as st
 import pandas as pd
 import joblib
@@ -50,7 +51,7 @@ with st.sidebar:
     st.image("https://cdn-icons-png.flaticon.com/512/3135/3135810.png", width=200)
     st.title("About Project")
     st.info("""
-    Dashboard ini menggunakan model **Random Forest** untuk memprediksi status akademik mahasiswa berdasarkan faktor ekonomi dan performa akademik.
+    Dashboard ini menggunakan model **Random Forest** untuk memprediksi status akademik siswa berdasarkan faktor ekonomi dan performa akademik.
     """)
     st.divider()
     st.caption("Copyright (c) Sianipar 2026")
@@ -66,31 +67,51 @@ with st.container():
     inputs = {}
 
     with col1:
-        inputs["Previous_qualification_grade"] = st.number_input("Previous Qualification Grade", min_value=0.0, value=None)
-        inputs["Admission_grade"] = st.number_input("Admission Grade", min_value=0.0, value=None)
-        inputs["Tuition_fees_up_to_date"] = st.number_input("Tuition Fees Paid Up-to-date", min_value=0, value=None)
+        inputs["Previous_qualification_grade"] = st.number_input("Previous Qualification Grade", 
+                                                                 min_value=102.5, 
+                                                                 max_value=162.5,
+                                                                 placeholder=f"{102.5} - {162.5}",
+                                                                 value=None)
+        inputs["Admission_grade"] = st.number_input("Admission Grade", min_value=95.0, max_value=160.15, placeholder=f"{95.0} - {160.15}", value=None)
+        inputs["Tuition_fees_up_to_date"] = st.number_input("Tuition Fees Paid Up-to-date", min_value=0, max_value=1, placeholder="0 or 1", value=None)
 
     with col2:
         inputs["Curricular_units_1st_sem_evaluations"] = st.number_input("Curricular Units Evaluations (1st Sem)", 
-                                                                         min_value=0, 
+                                                                         min_value=0,
+                                                                         max_value=16,
+                                                                         placeholder=f"{0} - {16}",
                                                                          value=None)
         inputs["Curricular_units_1st_sem_approved"] = st.number_input("Curricular Units Approved (1st Sem)", 
-                                                                      min_value=0.0, 
+                                                                      min_value=0.0,
+                                                                      max_value=10.5, 
+                                                                      placeholder=f"{0.0} - {10.5}",
                                                                       value=None)
-        inputs["Curricular_units_1st_sem_grade"] = st.number_input("Curricular Units Grade (1st Sem)", min_value=0.0, value=None)
+        inputs["Curricular_units_1st_sem_grade"] = st.number_input("Curricular Units Grade (1st Sem)", 
+                                                                   min_value=0.0,
+                                                                   max_value=17.0, 
+                                                                   placeholder=f"{0.0} - {17.0}",
+                                                                   value=None)
 
     with col3:
         inputs["Curricular_units_2nd_sem_evaluations"] = st.number_input("Curricular Units Evaluations (2nd Sem)", 
-                                                                         min_value=0, 
+                                                                         min_value=0,
+                                                                         max_value=16, 
+                                                                         placeholder=f"{0} - {16}",
                                                                          value=None)
         inputs["Curricular_units_2nd_sem_approved"] = st.number_input("Curricular Units Approved (2nd Sem)", 
-                                                                      min_value=0, 
+                                                                      min_value=0,
+                                                                      max_value=12, 
+                                                                      placeholder=f"{0} - {12}",
                                                                       value=None)
-        inputs["Curricular_units_2nd_sem_grade"] = st.number_input("Curricular Units Grade (2nd Sem)", min_value=0.0, value=None)
+        inputs["Curricular_units_2nd_sem_grade"] = st.number_input("Curricular Units Grade (2nd Sem)", 
+                                                                   min_value=0.0, 
+                                                                   max_value=17.2, 
+                                                                   placeholder=f"{0.0} - {17.2}",
+                                                                   value=None)
 
     with col4:
-        inputs["Unemployment_rate"] = st.number_input("Unemployment Rate (%)", min_value=0.0, value=None)
-        inputs["GDP"] = st.number_input("GDP Rate (%)", min_value=0.0, value=None)
+        inputs["Unemployment_rate"] = st.number_input("Unemployment Rate (%)", min_value=7.6, max_value=16.2, placeholder=f"{7.6} - {16.2}", value=None)
+        inputs["GDP"] = st.number_input("GDP Rate (%)", min_value=-4.0, max_value=3.51, placeholder=f"{-4.0} - {3.51}", value=None)
 
 # --- 7. TOMBOL PREDIKSI ---
 st.markdown("<br>", unsafe_allow_html=True)
